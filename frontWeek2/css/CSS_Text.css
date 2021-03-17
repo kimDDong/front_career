@@ -1,0 +1,49 @@
+.h1 {
+  color: red;
+  text-align: left;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+.h2 {
+  color: orange;
+  text-align: center;
+  text-decoration: overline;
+  text-transform: lowercase;
+}
+.h3 {
+  color: yellow;
+  text-align: right;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.h4 {
+  text-indent: 50px;
+  letter-spacing: 3px;
+}
+.h5 {
+  line-height: 1.5;
+  text-shadow: 3px 2px gray ;
+}
+.h6 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  word-spacing: 10px;
+}
+.p1 {
+  white-space: nowrap;
+}
+.img1 {
+  vertical-align: top;
+}
+.img2 {
+  vertical-align: middle;
+}
+.img3 {
+  vertical-align: bottom;
+}
+.img4 {
+  vertical-align: text-top;
+}
+.img5 {
+  vertical-align: text-bottom;
+}
