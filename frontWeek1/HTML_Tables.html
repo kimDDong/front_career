@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Tables</title>
+    <style media="screen">
+      table, th, td {
+        border: 1px solid black;
+        padding: 5px;
+        border-collapse: collapse;
+      }
+      table {
+        /* border-spacing: 15px; */
+      }
+      th, td {
+      }
+      th {
+        text-align: left;
+      }
+      caption {
+        font-size: 500%;
+      }
+      table.info tr:nth-child(even) {
+        background-color: #eee;
+      }
+      table.info tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      table.info th {
+        background-color: black;
+        color: white
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 100%;" class="info">
+      <caption>Info</caption>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Age</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <table class="tmp">
+            <tr>
+              <td>A</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>D</td>
+            </tr>
+          </table>
+        </td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+
+    <table style="width: 100%;">
+      <caption>Info</caption>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Age</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <table>
+            <tr>
+              <td>A</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>D</td>
+            </tr>
+          </table>
+        </td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+  </body>
+</html>

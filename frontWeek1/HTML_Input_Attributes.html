@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Input Attributes</title>
+  </head>
+  <body>
+    <form action="/action_page.php" method="post" id="form1">
+      <label for="fname">First name: </label>
+      <input type="text" name="fname" autofocus><br>
+      <label for="lname">Last name: </label>
+      <input type="text" name="lname"><br>
+      <label for="email">email: </label>
+      <input type="emal" name="email" autocomplete="off" required><br>
+      <input type="submit" name="submit" value="submit">
+      <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+      <input type="submit" formenctype="Multipart/form-data" value="Submit as Multipart/form-data">
+      <input type="submit" formnovalidate value="No validate">
+      <input type="submit" formmethod="get" value="Submit using Get">
+      <input type="submit" formtarget="_blank" value="Submit with new window">
+      <input type="image" src="img_submit.gif" formnovalidate>
+    </form>
+    <label for="gender">gender: </label>
+    <input type="text" name="gender" form="form1"><br>
+    <hr>
+    <form action="index.html" method="post">
+      Webpage: <input type="url" list="url" list="url_list">
+      <datalist id="url_list">
+        <option label="W3Schools" value="https://www.w3schools.com">
+        <option label="Google" value="http://www.google.com">
+        <option label="Microsoft" value="http://www.microsoft.com">
+      </datalist>
+    </form>
+    <hr>
+    <form action="index.html" method="post">
+      <label for="datemin">1997.05.11~</label>
+      <input type="date" name="datemin" value="datemin" min="1997-05-11"><br>
+      <label for="datemax">~2021.03.11</label>
+      <input type="date" name="datemax" value="datemax" max="2021-03-11"><br>
+      <label for="quantity">0~99(step 3)</label>
+      <input type="number" name="quantity" min="0" max="100" step="3"><br>
+      <input type="submit" name="submit">
+    </form>
+    <hr>
+    <form action="index.html" method="post">
+      <label for="files">select files: </label>
+      <input type="file" multiple>
+      <input type="submit">
+    </form>
+    <hr>
+    123-45-678
+    <form action="index.html" method="post">
+      <label for="code">Code: </label>
+      <input type="text" name="code" pattern="[A-Z][0-9]" placeholder="ex) B3"><br>
+      <label for="phone">Phone: </label>
+      <input type="text" name="phone" pattern="010-[0-9]{4}-[0-9]{4}" placeholder="ex) 010-4537-8480"><br>
+      <input type="submit">
+    </form>
+  </body>
+</html>

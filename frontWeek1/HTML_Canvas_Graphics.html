@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Canvas Graphics</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="300" height="300" style="border:1px solid grey"></canvas>
+    <br>
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(75,37.5,150,75);
+      ctx.moveTo(0,0);
+      ctx.lineTo(75+150,37.5+75);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc((75+150)/2,(37.5+75)/2,20,0,2*Math.PI);
+      ctx.stroke();
+      ctx.font = "30px Arial";
+      ctx.fillText("Hello World",(75+150)/2,37.5+75+30);
+      ctx.strokeText("Hello World",(75+150)/2,37.5+75+30+30);
+      // Create gradient
+      var grd = ctx.createLinearGradient(0,0,200,0);
+      grd.addColorStop(0,"red");
+      grd.addColorStop(1,"white");
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect((75+150)/2,37.5+75+30+30,120,60);
+
+      var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+      grd.addColorStop(0,"red");
+      grd.addColorStop(1,"white");
+
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(10,10,150,80);
+    </script>
+
+    <img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
+    <p>Canvas to fill:</p>
+    <canvas id="myCanvas2" width="250" height="300"
+    style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.</canvas>
+
+    <p><button onclick="fillCanvas()">Try it</button></p>
+
+    <script>
+    function fillCanvas() {
+      var c = document.getElementById("myCanvas2");
+      var ctx = c.getContext("2d");
+      var img = document.getElementById("scream");
+      ctx.drawImage(img,0,0);
+    }
+</script>
+
+  </body>
+</html>

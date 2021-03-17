@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Input Types</title>
+  </head>
+  <body>
+    <form action="index.html" method="post">
+      <label for="id">ID</label><br>
+      <input type="text" name="id" value=""><br>
+      <label for="pw">PW</label><br>
+      <input type="password" name="pw" value=""><br>
+
+      <input type="radio" name="gender" value="male">
+      <label for="gender">Male</label><br>
+      <input type="radio" name="gender" value="female">
+      <label for="gender">Female</label><br>
+
+      <input type="checkbox" name="sports" value="soccer">
+      <label for="sports">soccer</label><br>
+      <input type="checkbox" name="sports" value="baseball">
+      <label for="sports">baseball</label><br>
+      <input type="checkbox" name="sports" value="basketball">
+      <label for="sports">basketball</label><br>
+
+      <label for="quantity">Quantity(0~100): </label>
+      <input type="number" name="quantity" value="0" min="0" max="100" step="10"><br>
+
+      <label for="birthday">Birthday(1900-01-01~2021-03-09): </label>
+      <input type="date" name="birthday" value="1900-01-01" min="1900-01-01" max="2021-03-09"><br>
+
+      <label for="color">Color: </label>
+      <input type="color" name="color" value="#ff0000"><br>
+
+      <label for="volume">Volume(0~100): </label>
+      <p>0<input type="range" name="volume" value="50" min="0" max="100">100</p>
+
+      <label for="month">Birthday_year&month(1900-01~2021-03): </label>
+      <input type="month" name="month" value="1900-01" min="1900-01" max="2021-03"><br>
+
+      <label for="week">week: </label>
+      <input type="week" name="week"><br>
+
+      <label for="appt">time: </label>
+      <input type="time" name="appt"><br>
+
+      <label for="dtime1">Birthday_date&time1: </label>
+      <input type="datetime" name="dtime1"><br>
+
+      <label for="dtime2">Birthday_date&time2: </label>
+      <input type="datetime-local" name="dtime2"><br>
+
+      <label for="email">email: </label>
+      <input type="email" name="email"><br>
+
+      <label for="search">Search: </label>
+      <input type="search" name="search"><br>
+
+      <label for="phone">phone number: </label>
+      <input type="tel" name="phone" placeholder="010-1111-1111" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"><br>
+
+      <label for="homepage">homepage: </label>
+      <input type="url" name="homepage"><br>
+
+      <input type="button" name="button" value="Click me!" onclick="alert('Bang!')">
+      <button type="button" name="button" onclick="alert('Bang!')">Click me!</button>
+
+    </form>
+  </body>
+</html>

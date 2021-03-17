@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Lists</title>
+    <style media="screen">
+      ul#menu {
+        background-color: black;
+        color:white;
+        padding:30px;
+      }
+      ul#menu li {
+        display:inline;
+        padding:30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>unordered list</h1>
+    <h2>list-style-type:default</h2>
+    <ul>
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ul>
+    <h2>list-style-type:bullet</h2>
+    <ul style="list-style-type:bullet;">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ul>
+    <h2>list-style-type:circle</h2>
+    <ul style="list-style-type:circle;">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ul>
+    <h2>list-style-type:square</h2>
+    <ul style="list-style-type:square;">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ul>
+    <h2>list-style-type:none</h2>
+    <ul style="list-style-type:none;">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ul>
+    <h1>ordered list</h1>
+    <h2>type:default</h2>
+    <ol>
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ol>
+    <h2>type:1</h2>
+    <ol type="1">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ol>
+    <h2>type:A</h2>
+    <ol type="A">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ol>
+    <h2>type:a</h2>
+    <ol type="a">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ol>
+    <h2>type:I</h2>
+    <ol type="I">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ol>
+    <h2>type:i</h2>
+    <ol type="i">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ol>
+    <h1>description list</h1>
+    <dl>
+      <dt>coffee</dt>
+      <dd>black hot drink</dd>
+      <dt>milk</dt>
+      <dd>white cold drink</dd>
+    </dl>
+    <hr>
+    <h1>nested list</h1>
+    <ul>
+      <li>coffee</li>
+      <li>
+        tea
+        <ul style="list-style-type:circle;">
+          <li>black tea</li>
+          <li>
+            green tea
+            <ul style="list-style-type:square;">
+              <li>China</li>
+              <li>Africa</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>milk</li>
+    </ul>
+    <h1>horizontal list</h1>
+    <ul id="menu">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>PHP</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Form Elements</title>
+  </head>
+  <body>
+    <form action="KDH.jpg" method="post">
+      <label for="cars">Choose a car:</label>
+      <select class="cars" name="cars">
+        <option value="hyundai">Hyundai</option>
+        <option value="kia">Kia</option>
+        <option value="daewoo" selected>Daewoo</option>
+      </select><br>
+      <input list="countries" name="country">
+      <datalist id="countries">
+        <option value="ROK">ROK</option>
+        <option value="USA">USA</option>
+      </datalist>
+      <p>msg: </p>
+      <textarea name="msg" rows="8" cols="80">send me a msg from here.</textarea>
+      <input type="submit" name="submit"><br>
+      <button type="button" name="button" onclick="alert('Hi!')">alert</button>
+    </form>
+  </body>
+</html>

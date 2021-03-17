@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Geolocation</title>
+  </head>
+  <body>
+    <button type="button" name="getLocationButton" onclick="getLocation1()">Get Location</button><br>
+    <button type="button" name="getLocationButton" onclick="getLocation2()">Get Location(live)</button><br>
+    <p id="locationWindow1"></p>
+    <p id="locationWindow2"></p>
+    <script type="text/javascript">
+      var a = document.getElementById("locationWindow1");
+      var b = document.getElementById("locationWindow2");
+
+      function getLocation1() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition1);
+        } else {
+          a.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+      function showPosition1(position) {
+        a.innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+      }
+      function getLocation2() {
+        if (navigator.geolocation) {
+          navigator.geolocation.watchPosition(showPosition2);
+        } else {
+          b.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+      function showPosition2(position) {
+        b.innerHTML = "LIVE:<br>Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+      }
+    </script>
+
+
+
+  </body>
+</html>
