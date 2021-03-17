@@ -1,0 +1,27 @@
+.div1 {
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}
+.div2 {
+  max-width: 500px;
+  height: 100px;
+  background-color: powderblue;
+}
+.img2 {
+  width: 300px;
+  height: 300px;
+}
+.img3 {
+  width: 200px;
+  height: 200px;
+}
+.img4 {
+  width: 50%;
+  height: 50%;
+}
+.div4 {
+  max-width: 500px;
+  min-width: 100px;
+  background-color: powderblue;
+}
