@@ -1,0 +1,22 @@
+h1 {
+  border: inset 5px;
+}
+
+h2 {
+  border: outset medium;
+}
+
+h3 {
+  border: dotted 2px;
+  border-bottom: solid 15px;
+}
+
+h4 {
+  border: double thick;
+  border-right: solid 15px;
+}
+
+h5 {
+  border-style: dashed dotted double groove;
+  border-color: red orange yellow green;
+}
