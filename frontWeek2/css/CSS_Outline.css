@@ -1,0 +1,11 @@
+.h1 {
+  width: 500px;
+  height: 200px;
+  border: 2px solid red;
+  outline: 2px solid;
+  outline-color: invert;
+  outline-offset: -2px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
