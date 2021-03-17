@@ -1,0 +1,29 @@
+/* body {
+  background-color: lightblue;
+  background-image: url("../img/w3schools.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 200px;
+  background-attachment: fixed;
+} */
+body {
+  background: lightblue url("../img/w3schools.jpg") no-repeat top left fixed;
+  margin-left: 200px;
+}
+
+h1 {
+  background-color: green;
+}
+
+h2 {
+  background-color: maroon;
+}
+
+.center_div {
+  border: 1px solid maroon;
+  margin: auto;
+  width: 90%;
+  background-color: pink;
+  text-align: left;
+  padding: 8px;
+}
