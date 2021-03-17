@@ -1,0 +1,19 @@
+h1 {
+  background-color: DodgerBlue;
+}
+
+h2 {
+  background-color: Tomato;
+}
+
+h3 {
+  color: MediumSeaGreen;
+}
+
+h4 {
+  border: 2px solid Violet;
+}
+
+h5 {
+  background-color: rgba(255, 30, 50, 0.5);
+}
