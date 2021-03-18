@@ -1,0 +1,161 @@
+.div1 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+.div2 {
+  border: red 1px solid;
+}
+.div3 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+.div4 {
+  border: red 1px solid;
+  clear: left;
+}
+.div5{
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+.div6{
+  border: red 1px solid;
+}
+.a{
+  padding: 5px;
+  border: 3px solid #73AD21;
+}
+.img1{
+  float: right;
+}
+.b{
+  padding: 5px;
+  border: 3px solid #73AD21;
+}
+.b::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.img2{
+  float: right;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.c::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.d::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.flex-container{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.box2 {
+  border: thick blue solid;
+  background-color: gray;
+  font-size: 40px;
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.ul1{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+}
+.li1{
+  float: left;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 25px;
+  color: white;
+  text-align: center;
+}
+a:hover{
+ background-color: gray;
+}
+.active{
+  background-color: red;
+}
+
+.header, .footer {
+  color: white;
+  background-color: grey;
+  padding: 15px;
+}
+
+.ul2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.li2 {
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: powderblue;
+  color: white;
+}
+.li2:hover {
+  background-color: skyblue;
+}
+
+.menu {
+  width: 25%;
+}
+
+.content {
+  width: 75%;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+
+.e::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*
+e
+column
+menu
+content */
